@@ -8,19 +8,24 @@ import{RouterModule,Routes} from '@angular/router';
 import { SignupComponent } from './signup/signup.component';
 import{HttpClientModule} from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { TweetComponent } from './tweet/tweet.component';
 const appRoutes:Routes=[
   {
     path:"",component:SigninComponent
   },
   {
     path:"signup",component:SignupComponent
+  },
+  {
+    path:"tweet",component:TweetComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
     SigninComponent,
-    SignupComponent
+    SignupComponent,
+    TweetComponent
   ],
   imports: [
     BrowserModule,
